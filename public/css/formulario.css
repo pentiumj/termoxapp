@@ -1,0 +1,2 @@
+
+form{margin-top:25px}label{display:inline-block;float:left;clear:left;width:100px;margin-bottom:10px}input{display:inline-block;float:left;margin-bottom:10px;border-radius:10px}textarea{float:left;margin-bottom:10px;border-radius:10px}#enviarForm{background-color:#00b98b;color:white;font-weight:bold;border:0;padding:10px;border-radius:10px;cursor:pointer;clear:both;margin-top:20px;margin-left:70px}#enviarForm:hover{background-color:#009d76}

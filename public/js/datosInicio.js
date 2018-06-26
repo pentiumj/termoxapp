@@ -1,0 +1,2 @@
+
+$(document).ready(function(){function b(d){var c=d.getDate();var e=d.getMonth()+1;var f=d.getFullYear();if(c<10){c="0"+c}if(e<10){e="0"+e}d=f+"-"+e+"-"+c;return d}var a=new Date();a=b(a);$.ajax({data:"inicio="+a+"&fin="+a,url:"tablaInicio.php",type:"post",beforeSend:function(){$("#div-tabla").html("Enviando, espere por favor...")},success:function(c){$("#div-tabla").html(c)}});$.ajax({url:"estadisticasFarmacia.php",type:"post",beforeSend:function(){$("#divFarmaciasAdmin").html("Enviando, espere por favor...")},success:function(c){$("#divFarmaciasAdmin").html(c)}})});

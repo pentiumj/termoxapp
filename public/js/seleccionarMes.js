@@ -1,0 +1,2 @@
+
+$(document).ready(function(){$("#datosT").hide();$("#datosH").hide();$("#tituloGD").hide();document.getElementById("meses").selectedIndex=0;$("#meses").change(function(){var a=$("#meses").val();$.ajax({data:"meses="+a,url:"generarGraficos.php",type:"post",beforeSend:function(){$("#graficar").html("Enviando, espere por favor...")},success:function(b){$("#graficar").html(b);$("#datosT").show();$("#datosH").show();$("#tituloGD").show()}})})});
